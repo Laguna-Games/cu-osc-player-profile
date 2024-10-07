@@ -1,0 +1,530 @@
+[
+    {
+        "type": "function",
+        "name": "abandonDelegation",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x270ed22d"
+    },
+    {
+        "type": "function",
+        "name": "getDelegate",
+        "inputs": [
+            {
+                "name": "delegator",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x544d8564"
+    },
+    {
+        "type": "function",
+        "name": "getDelegator",
+        "inputs": [
+            {
+                "name": "delegate",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xa64ad595"
+    },
+    {
+        "type": "function",
+        "name": "revokeDelegate",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x55d1ef38"
+    },
+    {
+        "type": "function",
+        "name": "setDelegate",
+        "inputs": [
+            {
+                "name": "delegate",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xca5eb5e1"
+    },
+    {
+        "type": "function",
+        "name": "checkDelegatePermission",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "permission",
+                "type": "uint8",
+                "internalType": "enum IPermissionProvider.Permission"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xf405e33f"
+    },
+    {
+        "type": "function",
+        "name": "checkDelegatePermissions",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "permissions",
+                "type": "uint8[]",
+                "internalType": "enum IPermissionProvider.Permission[]"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x779df8a6"
+    },
+    {
+        "type": "function",
+        "name": "getIndexForDelegatePermission",
+        "inputs": [
+            {
+                "name": "permission",
+                "type": "uint8",
+                "internalType": "enum IPermissionProvider.Permission"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "pure",
+        "selector": "0x4191ed4d"
+    },
+    {
+        "type": "function",
+        "name": "getRawDelegatePermissions",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3a534331"
+    },
+    {
+        "type": "function",
+        "name": "requireDelegatePermission",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "permission",
+                "type": "uint8",
+                "internalType": "enum IPermissionProvider.Permission"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "view",
+        "selector": "0xbbad9f62"
+    },
+    {
+        "type": "function",
+        "name": "requireDelegatePermissions",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "permissions",
+                "type": "uint8[]",
+                "internalType": "enum IPermissionProvider.Permission[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "view",
+        "selector": "0x8420fc23"
+    },
+    {
+        "type": "function",
+        "name": "resetDelegatePermissions",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x62b30550"
+    },
+    {
+        "type": "function",
+        "name": "setDelegateAndPermissions",
+        "inputs": [
+            {
+                "name": "delegate",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "permissions",
+                "type": "uint8[]",
+                "internalType": "enum IPermissionProvider.Permission[]"
+            },
+            {
+                "name": "states",
+                "type": "bool[]",
+                "internalType": "bool[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xf9415d2f"
+    },
+    {
+        "type": "function",
+        "name": "setDelegateAndPermissionsRaw",
+        "inputs": [
+            {
+                "name": "delegate",
+                "type": "address",
+                "internalType": "address"
+            },
+            {
+                "name": "permissionsRaw",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xd0a2ecb2"
+    },
+    {
+        "type": "function",
+        "name": "setDelegatePermission",
+        "inputs": [
+            {
+                "name": "permission",
+                "type": "uint8",
+                "internalType": "enum IPermissionProvider.Permission"
+            },
+            {
+                "name": "state",
+                "type": "bool",
+                "internalType": "bool"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x1fc245c2"
+    },
+    {
+        "type": "function",
+        "name": "setDelegatePermissions",
+        "inputs": [
+            {
+                "name": "permissions",
+                "type": "uint8[]",
+                "internalType": "enum IPermissionProvider.Permission[]"
+            },
+            {
+                "name": "states",
+                "type": "bool[]",
+                "internalType": "bool[]"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xeb744da7"
+    },
+    {
+        "type": "function",
+        "name": "setDelegatePermissionsRaw",
+        "inputs": [
+            {
+                "name": "permissionsRaw",
+                "type": "uint256",
+                "internalType": "uint256"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x8a45bee6"
+    },
+    {
+        "type": "function",
+        "name": "SUPPORTS_INTERFACE_STORAGE_POSITION",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bytes32",
+                "internalType": "bytes32"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x3a53ff49"
+    },
+    {
+        "type": "function",
+        "name": "deleteWalletHandle",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x3d61cd68"
+    },
+    {
+        "type": "function",
+        "name": "deleteWalletTokenURI",
+        "inputs": [],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xc9e26f0c"
+    },
+    {
+        "type": "function",
+        "name": "setWalletHandle",
+        "inputs": [
+            {
+                "name": "handle",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0xedebfc35"
+    },
+    {
+        "type": "function",
+        "name": "setWalletTokenURI",
+        "inputs": [
+            {
+                "name": "tokenURI",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "selector": "0x03f37057"
+    },
+    {
+        "type": "function",
+        "name": "walletHandle",
+        "inputs": [
+            {
+                "name": "wallet",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "handle",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0xdaed7cbb"
+    },
+    {
+        "type": "function",
+        "name": "walletMetadata",
+        "inputs": [
+            {
+                "name": "wallet",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "handle",
+                "type": "string",
+                "internalType": "string"
+            },
+            {
+                "name": "tokenURI",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x6323f5e9"
+    },
+    {
+        "type": "function",
+        "name": "walletTokenURI",
+        "inputs": [
+            {
+                "name": "wallet",
+                "type": "address",
+                "internalType": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "tokenURI",
+                "type": "string",
+                "internalType": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "selector": "0x546bbf30"
+    },
+    {
+        "type": "event",
+        "name": "AdminChanged",
+        "inputs": [
+            {
+                "name": "previousAdmin",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            },
+            {
+                "name": "newAdmin",
+                "type": "address",
+                "indexed": false,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x7e644d79"
+    },
+    {
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "inputs": [
+            {
+                "name": "previousOwner",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "newOwner",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x8be0079c"
+    },
+    {
+        "type": "event",
+        "name": "DelegateChanged",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "oldDelegate",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "newDelegate",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "permissions",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x287e04de"
+    },
+    {
+        "type": "event",
+        "name": "PermissionsChanged",
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "delegate",
+                "type": "address",
+                "indexed": true,
+                "internalType": "address"
+            },
+            {
+                "name": "oldPermissions",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            },
+            {
+                "name": "newPermissions",
+                "type": "uint256",
+                "indexed": false,
+                "internalType": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "selector": "0x8cf974fa"
+    }
+]

@@ -1,0 +1,33 @@
+{
+    "projectName": "playerprofile",
+    "buildDirectory": "build",
+    "abiOutputDirectory": "abis",
+    "abiConfigurations": [
+        {
+            "configuration": "lgInternal",
+            "minified": false,
+            "functionsPrecedence": {},
+            "eventsPrecedence": {},
+            "selectorsPrecedence": {},
+            "contractsToIgnore": [
+                "DeployFacet",
+                "DebugFacet",
+                "LensHubMock",
+                "LibBin",
+                "LibDebug",
+                "SupportsInterfaceInitializerFacet"
+            ],
+            "eventsToIgnore": [],
+            "functionsToIgnore": [
+                "diamondCut",
+                "transferOwnership",
+                "initializeSupportsInterface",
+                "emptyString",
+                "setLensProtocolAddress"
+            ],
+            "selectorsToIgnore": [],
+            "eventsOnly": false,
+            "selectorLookup": false
+        }
+    ]
+}
